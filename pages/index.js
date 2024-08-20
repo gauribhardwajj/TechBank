@@ -57,7 +57,7 @@ function Home() {
           </button>
         </div>
         <div className="justify-center flex mb-20 gap-5">
-            <a target="_blank" href="https://github.com/gauribhardwajj"><img src="/github.png"  className="w-7"/></a>
+            <a target="_blank" href="https://github.com/gauribhardwajj/TechBank"><img src="/github.png"  className="w-7"/></a>
             <a target="_blank" href="https://www.linkedin.com/in/gauriibhardwajj/"><img src="/linkedin.png"  className="w-7"/></a>
         </div>
       </div>
