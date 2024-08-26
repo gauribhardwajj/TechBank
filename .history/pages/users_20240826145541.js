@@ -7,6 +7,10 @@ import { getusers } from "../utils/request";
 const Users = ({ users }) => {
   const router = useRouter();
 
+  if (!users || !users.data) {
+    return <p>Loading...</p>; // Handle loading state
+  }
+
   return (
     <div className="min-h-screen w-full bg-slate-50 text-slate-900 antialiased">
       <Head>
@@ -35,16 +39,15 @@ const Users = ({ users }) => {
                   <th className="capitalize">Current Balance</th>
                 </tr>
               </thead>
-              <tbody className="">
-                {users?.data?.length > 0 ? (
-                  users?.data?.map((user) => (
+              <tbody>
+                {users.data.length > 0 ? (
+                  users.data.map((user) => (
                     <tr
                       key={user._id}
                       className="p-5 grid grid-cols-3 justify-items-start w-full text-xs md:text-base"
                     >
                       <td
                         onClick={() => router.push(`/${user._id}`)}
-                        key={user._id}
                         className="link"
                       >
                         {user.name}
@@ -55,7 +58,7 @@ const Users = ({ users }) => {
                   ))
                 ) : (
                   <tr className="p-5 grid place-items-center w-full text-xs md:text-base">
-                    <td className="text-3xl font-medium">No Users Fetched</td>
+                    <td className="text-3xl font-medium">No Users Found</td>
                   </tr>
                 )}
               </tbody>

@@ -1,6 +1,6 @@
 {
     "rewrites": [
-        {"source": "/users", "destination": "/users"},
+        {"source": "/users", "destination": "./pages/users.js"},
         {"source": "/(.*)", "destination": "/"}
     ]
   }

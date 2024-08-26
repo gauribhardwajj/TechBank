@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { createuser } from "../utils/request";
 import Head from "next/head";
-import {toast } from "react-toastify";  // Import Toast components
+import { ToastContainer, toast } from "react-toastify";  // Import Toast components
 import 'react-toastify/dist/ReactToastify.css';  // Import Toastify CSS
 
 const validateEmail = (email) => {
@@ -54,7 +54,7 @@ function CreateUser() {
       router.replace("/");
     }, 2000); // 2-second delay before redirect
     }
-
+    
     setLoading(false);
   };
 

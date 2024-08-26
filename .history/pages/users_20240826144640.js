@@ -55,7 +55,7 @@ const Users = ({ users }) => {
                   ))
                 ) : (
                   <tr className="p-5 grid place-items-center w-full text-xs md:text-base">
-                    <td className="text-3xl font-medium">No Users Fetched</td>
+                    <td className="text-3xl font-medium">No Classes Found</td>
                   </tr>
                 )}
               </tbody>
@@ -72,12 +72,12 @@ export default Users;
 export async function getServerSideProps(context) {
   const users = await getusers();
 
-  console.log("Fetched users:" ,users);
   if (users?.hasError) {
     return {
       notFound: true,
     };
   }
+  console.log(users);
   return {
     props: { users },
   };
