@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/users",
+      "destination": "/pages/api/users.js"}
+    ]
+  }
