@@ -3,19 +3,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Simple Banking Website
 This is a simple banking website built using Next.js and MongoDB. The website allows users to create accounts, view profiles, and transfer money between users. The project is a basic demonstration of full-stack web development, utilizing a MongoDB backend and deployed on Vercel.
 
-###Features
-`Home Page:` Overview of the website with links to other pages.
-`Create User Page:` Allows you to create a new user with a unique name and email.
-`Transfer Money Page:` Enables users to transfer money between existing accounts.
-`User Profile Page:` Displays the profile details of a specific user, including their current balance.
-`All Users List Page:` Lists all the users with their basic details.
+### Features
+`Home Page:` Overview of the website with links to other pages. <br>
+`Create User Page:` Allows you to create a new user with a unique name and email. <br>
+`Transfer Money Page:` Enables users to transfer money between existing accounts. <br>
+`User Profile Page:` Displays the profile details of a specific user, including their current balance. <br>
+`All Users List Page:` Lists all the users with their basic details. <br>
 
-##Tech Stack
+## Tech Stack
 * Frontend: Next.js - A React framework for server-side rendering and generating static websites.
 * Backend: MongoDB - A NoSQL database used to store user data.
 * Deployment: Vercel - A platform for deploying frontend frameworks and static sites.
 
-##Database Schema
+## Database Schema
 The User model is defined using Mongoose with the following schema:
 
 ```javascript
